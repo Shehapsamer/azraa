@@ -499,7 +499,7 @@ background-color: var(--bgColor);
   padding: 70px 0;
 }
 .supTotal {
-  padding: 70px;
+  padding: 70px 0;
 }
 /* cart_sidbar */
 .cart_open_tool{
@@ -660,7 +660,53 @@ background-color: var(--bgColor);
 .single_pro .box  p{
   margin: 20px 0;
 }
+/* cart */
+.cart img{
+  width: 100px !important;
+}
+.cart .Qunte{
+  display: flex;
+}
+.cart .Qunte button{
+  padding: 5px;
+  background-color: var(--btnColor);
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+.cart_page_contant{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--main_borderColor);
+}
+.cart_page_contant button {
+  background-color: var(--btnColor);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.cart_total_contant{
+  border: var(--main_borderColor);
+  padding: 10px;
+  margin-bottom: 25px;
+}
+.cart_total_contant h3{
+  margin-bottom: 30px;
+}
+.cart_total_contant h4{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.cart_total_contant h5{
+  font-size: 16px;
 
+}
+.checkout_box_container{
+  width: 50%;
+  margin: auto;
+}
 
 /* footer */
 .footer{
@@ -786,6 +832,18 @@ background-color: var(--bgColor);
 }
 .form{
   width: 100% !important;
+}
+.cart_page_contant{
+  width: 20% !important;
+}
+.cart_page_contant h4{
+  font-size: 16px;
+}
+.cart_page_contant img{
+  width: 50px !important;
+}
+.checkout_box_container{
+  width: 100%;
 }
 
  }
