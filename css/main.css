@@ -971,6 +971,17 @@ background-color: var(--bgColor);
 .Add_to_Cart_chose_container {
   align-items: flex-end;
 }
+.owl-carousel .owl-nav.disabled .owl-prev,
+.owl-carousel .owl-nav.disabled .owl-next{
+  margin: 0 !important;
+  margin-left: 5px !important;
+
+}
+.top_sections a{
+  margin-left: 75px !important;
+}
+
+
  }
 
 
