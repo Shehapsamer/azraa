@@ -150,3 +150,13 @@ cart_open_tool.addEventListener("click", function () {
 close_cart.addEventListener("click", function () {
     cart_sidbar.classList.remove("Show")
 })
+// //////////////
+let Add_to_Cart_chose_container = document.getElementById("Add_to_Cart_chose_container");
+let close_chose = document.getElementById("close_chose");
+function addtoChose  () {
+let Add_to_Cart_chose_container = document.getElementById("Add_to_Cart_chose_container");
+    Add_to_Cart_chose_container.classList.add("Show_Cart_Chose")
+}
+close_chose.addEventListener("click", function () {
+    Add_to_Cart_chose_container.classList.remove("Show_Cart_Chose")
+})
