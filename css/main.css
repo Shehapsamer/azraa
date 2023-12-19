@@ -15,7 +15,10 @@
   --body_bgColor: #ffffff;
   --main_borderColor: 1px solid rgba(0, 0, 0, .125);
 }
-
+::selection {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
 ::-webkit-scrollbar {
   width: 10px;
 
@@ -262,11 +265,11 @@ section {
     width: 100%;
   }
   .navbar > #nav-check:not(:checked) ~ .nav-links {
-    height: calc(0vh - 50px);
+    height: 0;
     width: 100% !important;
   }
   .navbar > #nav-check:checked ~ .nav-links {
-    height: calc(70vh - 50px);
+    height: 284px;
   }
   .navbar>#nav-check:checked~.nav-btn .span_1{
   transform: rotateY(0deg) rotate(45deg);
@@ -377,6 +380,9 @@ section {
 padding: 70px 0;
 padding-top: 50px;
 background-color: var(--bgColor);
+}
+.product .box{
+  text-align: center;
 }
 .product .box img{
   border-radius: 5px;
@@ -508,6 +514,9 @@ background-color: var(--bgColor);
 /* Categorie */
 .Categorie{
   padding-bottom: 70px;
+}
+.Categorie .ssaa{
+  width: 20%;
 }
 /* Login */
 .Login{
@@ -786,7 +795,7 @@ background-color: var(--bgColor);
 
 /* footer */
 .footer{
-  padding: 70px 0;
+  padding: 20px 0;
   text-align: center;
   background-color: var(--Secondary-color );
 }
@@ -795,13 +804,26 @@ background-color: var(--bgColor);
   margin-bottom: 50px;
   border-radius: 20px;
 }
+.top_foot h3{
+  color: var(--textColor);
+  font-size: 25px;
+}
+.top_foot h4{
+  margin-top: 30px;
+  font-size: 30px;
+  color: var(--body_bgColor);
+
+}
+.top_foot p{
+  color: #ccc;
+}
 .top_foot ul{
-  display: flex;
-  justify-content: center;
   margin: 20px 0;
+  text-align: center;
+
 }
 .top_foot ul li{
-  margin: 0 10px;
+  margin: 10px 0;
 }
 .top_foot ul li svg{
   color: var(--body_bgColor);
@@ -809,7 +831,19 @@ background-color: var(--bgColor);
 }
 .top_foot ul li a{
   color: var(--body_bgColor);
-  font-size: 18px;
+  font-size: 16px;
+  transition: all ease-in .3s;
+}
+.top_foot ul li a:hover{
+  margin-right: 5px;
+}
+.top_foot .sochial{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.top_foot .sochial li{
+  margin: 0 5px ;
 }
 .last_foot {
   border-top: var(--main_borderColor);
@@ -1008,11 +1042,18 @@ background-color: var(--bgColor);
 .top_sections a{
   margin-left: 75px !important;
 }
-
-
+.Categorie .ssaa{
+  width: 50% !important;
+}
  }
 
 
+ @media screen and (min-width:768px) and (max-width:1023px){
+.Categorie .ssaa{
+  width: 33.333% !important;
+}
+  
+ }
 
 
  .scroll_up {
